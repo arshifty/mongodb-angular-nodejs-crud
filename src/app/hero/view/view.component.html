@@ -1,0 +1,25 @@
+<div class="container">
+  <h4 class="text-primary">User List</h4>
+  <table class="table" >
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Contact</th>
+        <th>Password</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let val of userValue">
+        <td>{{ val.userName }}</td>
+        <td>{{ val.contact }}</td>
+        <td>{{ val.password }}</td>
+        <td>{{ val.city }}</td>
+        <td>{{ val.country }}</td>
+        <td>{{ val.code }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
